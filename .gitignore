@@ -1,3 +1,6 @@
 /env/
 /static/
 !/static/iamges/
+/logs/
+/.idea/
+
