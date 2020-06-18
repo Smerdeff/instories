@@ -1,6 +1,8 @@
 /env/
-/static/
-!/static/iamges/
-/logs/
+/backend/static/
+!/backend/static/images/
+/backend/logs/
 /.idea/
+
+
 
