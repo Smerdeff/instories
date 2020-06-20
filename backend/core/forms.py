@@ -18,14 +18,17 @@ class PushesForm(forms.ModelForm):
         self.helper.layout = Layout(
             Div(
                 Div(
-                    Field('title', css_class='form-control'),
-                    Field('text',css_class='form-control'),
-                    Field('sent_at',css_class='form-control'),
-                    css_class='col-lg-6 col-md-6 col-sm-12'),
-                Div(
-                    template='admin/pushes/preview.html',
-                    css_class='col-lg-6 col-md-6 col-sm-12'),
-                css_class='row'
+                    Div(
+                        Field('title', css_class='form-control', placeholder='Укажите заголовок'),
+                        Field('text', css_class='form-control', placeholder='Введите текст уведомления'),
+                        Field('sent_at', css_class='form-control', ),
+                        css_class='col-lg-6 col-md-6 col-sm-12'),
+                    Div(
+                        template='admin/pushes/preview.html',
+                        css_class='col-lg-6 col-md-6 col-sm-12'),
+                    css_class='row'
+                )
+                # ,  css_class='container'
             )
         )
         self.helper.form_method = 'post'
